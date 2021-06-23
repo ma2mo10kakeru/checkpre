@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta chareset="utf-8">
+<title>練習</title>
+</head>
+
+<script type="text/javascript">
+function kakunin1(){
+    if( document.form1.drugdose1.value==2 && document.form1.drugdose2.value==1 && document.form1.drugdose3.value==0 ){
+alert("正しく入力できています");
+    }else{
+alert("入力が間違っています");
+    }
+}
+</script>
+
+<body>
+<form name="form1">
+	薬剤の用量を上から順に入力<br>
+	<label>くすり1⃣：<input type="text" id="drugdose1" placeholder="半角で入力してください" inputmode="numeric" pattern="\d*"></label><br>
+	<label>くすり2⃣：<input type="text" id="drugdose2" placeholder="半角で入力してください" inputmode="numeric" pattern="\d*"></label><br>
+	<label>くすり3⃣：<input type="text" id="drugdose3" placeholder="半角で入力してください" inputmode="numeric" pattern="\d*"></label><br>
+	<input type="button" value="確認する" onclick="kakunin1()">
+	</form>
+
+</body>
+</html>
